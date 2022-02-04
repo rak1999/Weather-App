@@ -9,7 +9,6 @@ const winfo = document.querySelector('.w-info');
 const wicon = document.querySelector('.wicon');
 const cityInput = document.querySelector('.city-input');
 const searchBtn = document.querySelector('.search-btn');
-const searchSelf = document.querySelector('.search-self');
 const errText = document.querySelector('.err-txt');
 
 const convertKelvin = function (temp) {

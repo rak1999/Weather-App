@@ -46,8 +46,7 @@
     border-bottom: 1px solid black;
     transform: translateY(-15px);
   }
-  .search-btn,
-  .search-self {
+  .search-btn{
     background-color: #d22222;
     outline: none;
     border: none;
