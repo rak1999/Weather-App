@@ -21,7 +21,7 @@ const dateOptions = {
     year: 'numeric',
     month: 'short',
     day: 'numeric',
-  };
+};
 const today = new Date();
 const currentTime = today.getHours();
 if(currentTime >= 6 && currentTime <= 17){
@@ -38,6 +38,7 @@ const getCityWeather = async function(input){
     try{
         const base = `https://api.openweathermap.org/data/2.5/weather?q=${input}&appid=${WeatherApi}`;
         const data = await fetch(base);
+        console.log(data);
         if(data.status === 404) throw new error('Invalid')
             const dat = await data.json();
             console.log(dat);
@@ -61,4 +62,4 @@ searchBtn.addEventListener('click' , function (){
     const cityQuery = cityInput.value;
 
     getCityWeather(cityQuery);
-})
+});
